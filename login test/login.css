@@ -1,0 +1,57 @@
+
+@import url('http://fontsgoogleleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    padding: 20px;
+}
+.container#blur.active {
+    filter: blur(20/px);
+}
+.container.content
+{
+    position: relative;
+    max-width: 800px;
+
+}
+
+h2
+{
+    font-weight: 600;
+    margin-bottom:100px;
+    color:#333
+}
+
+#popup{
+
+    z-index: 99;
+    position: fixed;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:600 px;
+    padding:50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+
+}
+
+/* .bluring{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+} */
+
+#popup.active {
+    
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
